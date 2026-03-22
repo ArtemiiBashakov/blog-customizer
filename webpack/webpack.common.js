@@ -13,7 +13,7 @@ module.exports = {
 		filename: production
 			? 'static/scripts/[name].[contenthash].js'
 			: 'static/scripts/[name].js', // имя нашего бандла
-		publicPath: '/',
+		publicPath: './',
 	},
 	//Нужно помочь вебпаку научится работать с jsx и tsx файлами для этого используют ts loader
 	module: {
@@ -41,6 +41,7 @@ module.exports = {
 				type: 'asset/resource',
 				generator: {
 					filename: 'static/fonts/[hash][ext][query]',
+					publicPath: './static/fonts/',
 				},
 			},
 			{

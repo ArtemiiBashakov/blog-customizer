@@ -9,11 +9,11 @@ module.exports = {
 		react: {
 			version: 'detect',
 		},
-		"import/resolver": {
+		'import/resolver': {
 			typescript: {
-				project: "tsconfig.json",
-			}
-		}
+				project: 'tsconfig.json',
+			},
+		},
 	},
 	extends: [
 		'plugin:@typescript-eslint/recommended',
@@ -27,6 +27,12 @@ module.exports = {
 		'plugin:eslint-comments/recommended',
 	],
 	rules: {
+		'prettier/prettier': [
+			'error',
+			{
+				endOfLine: 'auto',
+			},
+		],
 		semi: [2, 'always'],
 		quotes: [2, 'single', { avoidEscape: true }],
 		'no-unused-vars': 'off',
