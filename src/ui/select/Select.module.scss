@@ -199,9 +199,11 @@
 .option-wide::before {
 	@include option-width-before;
 	background-image: url('../../images/wide.svg');
+	background-size: cover;
 }
 
 .option-narrow::before {
 	@include option-width-before;
 	background-image: url('../../images/narrow.svg');
+	background-size: cover;
 }
