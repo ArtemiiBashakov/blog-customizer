@@ -49,6 +49,7 @@ module.exports = {
 				issuer: /\.[jt]sx?$/,
 				use: ['@svgr/webpack', 'url-loader'],
 			},
+
 			{
 				test: /\.(sa|sc|c)ss$/,
 				use: [
